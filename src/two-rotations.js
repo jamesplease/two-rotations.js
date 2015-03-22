@@ -1,6 +1,6 @@
 import matrixGenerator from './matrix-generator';
 
-function TwoRotations(v, yaw, pitch) {
+function TwoRotations(v, yaw = 0, pitch = 0) {
 
   // Generate our rotation matrix given the yaw and pitch.
   // yaw and pitch are given in radians

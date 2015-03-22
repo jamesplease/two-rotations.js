@@ -4,7 +4,7 @@
 // Where Ri is the 3d rotation matrix about that axis
 // We call the angle about the y-axis the 'yaw,'
 // and the angle about the x-axis is the 'pitch.'
-function matrixGenerator(yaw = 0, pitch = 0) {
+function matrixGenerator(yaw, pitch) {
   var cosP = Math.cos(pitch);
   var sinP = Math.sin(pitch);
   var cosY = Math.cos(yaw);
