@@ -5,12 +5,12 @@
 [![Dependency Status](https://david-dm.org/jmeas/two-rotations.js.svg)](https://david-dm.org/jmeas/two-rotations.js)
 [![devDependency Status](https://david-dm.org/jmeas/two-rotations.js/dev-status.svg)](https://david-dm.org/jmeas/two-rotations.js#info=devDependencies)
 
-A matrix for rotating vectors about two axes.
+Rotate vectors about two axes.
 
 ### Motivation
 
-In three dimensions, there are three possible rotations – one about each axis. In many visualizations,
-a combination of rotations about two axes is particularly important. This is because these visualizations
+In three dimensions, there are three possible rotations: one about each axis. In many visualizations,
+a combination of rotations about two of these axes is particularly important. This is because these visualizations
 allow users to rotate the object about two axes by dragging the mouse.
 
 #### Vectors
@@ -41,7 +41,7 @@ var vector = [
 var vector = [1, 0, 0];
 
 // Rotate the vector about some `pitch` and `yaw`
-var newVector = twoRotations(vector, 20, 30);
+var newVector = twoRotations(vector, Math.PI, 30);
 ```
 
 #### API
@@ -55,11 +55,11 @@ Rotate `vector` about a `yaw` angle, then a `pitch` angle. Angles are measured i
 This library is intended to be used with mouse events. As such, the axes are based off of the axes defined by the
 browser viewport. The axes associated with mouse coordinates are illustrated below.
 
-![Browser viewport axes](https://cldup.com/gK54GFdGNh.png)
+![Browser viewport axes](https://cldup.com/FkFf5xbn-8.png)
 
 The axes of this library extend from that definition, adding a `z-axis` that points outward from the screen, toward you. This
 is shown in the following diagram.
 
 ![two-rotation.js axes](https://cldup.com/QlZiXZCoMT.png)
 
-The above diagram also shows the direction of rotation.
+The above diagram also indicates the direction of rotations.
