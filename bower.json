@@ -1,0 +1,31 @@
+{
+  "name": "two-rotations",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jmeas/two-rotations.js",
+  "authors": [
+    "Jmeas <jellyes2@gmail.com>"
+  ],
+  "description": "Rotate vectors about two axes.",
+  "main": "dist/two-rotations.js",
+  "keywords": [
+    "rotation",
+    "rotate",
+    "matrix",
+    "matrices",
+    "axes",
+    "axis",
+    "euler",
+    "angles",
+    "point",
+    "diagram",
+    "ui"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
