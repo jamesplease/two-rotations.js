@@ -1,11 +1,17 @@
 # two-rotations.js
 [![Travis build status](http://img.shields.io/travis/jmeas/two-rotations.js.svg?style=flat)](https://travis-ci.org/jmeas/two-rotations.js)
-[![Code Climate](https://codeclimate.com/github/jmeas/two-rotations.js/badges/gpa.svg)](https://codeclimate.com/github/jmeas/two-rotations.js)
 [![Test Coverage](https://codeclimate.com/github/jmeas/two-rotations.js/badges/coverage.svg)](https://codeclimate.com/github/jmeas/two-rotations.js)
 [![Dependency Status](https://david-dm.org/jmeas/two-rotations.js.svg)](https://david-dm.org/jmeas/two-rotations.js)
 [![devDependency Status](https://david-dm.org/jmeas/two-rotations.js/dev-status.svg)](https://david-dm.org/jmeas/two-rotations.js#info=devDependencies)
 
 Rotate vectors about two axes.
+
+### Installation
+
+```js
+npm install two-rotations
+bower install two-rotations
+```
 
 ### Motivation
 
