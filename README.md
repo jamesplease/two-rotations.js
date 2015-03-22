@@ -60,6 +60,6 @@ browser viewport. The axes associated with mouse coordinates are illustrated bel
 The axes of this library extend from that definition, adding a `z-axis` that points outward from the screen, toward you. This
 is shown in the following diagram.
 
-![two-rotation.js axes](https://cldup.com/b7O7sTC9rJ.png)
+![two-rotation.js axes](https://cldup.com/QlZiXZCoMT.png)
 
 The above diagram also shows the direction of rotation.
