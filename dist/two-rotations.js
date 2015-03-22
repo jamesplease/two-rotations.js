@@ -18,19 +18,15 @@
     return [[cosY, 0, sinY], [sinY * sinP, cosP, -sinP * cosY], [-sinY * cosP, sinP, cosP * cosY]];
   }
 
-  function TwoRotations(v) {
-    var yaw = arguments[1] === undefined ? 0 : arguments[1];
-    var pitch = arguments[2] === undefined ? 0 : arguments[2];
+  var generateMatrix = matrixGenerator;
 
-    // Generate our rotation matrix given the yaw and pitch.
-    // yaw and pitch are given in radians
-    var t = matrixGenerator(yaw, pitch);
-
-    // Return the transformed vector
+  function rotate(v, t) {
     return [v[0] * t[0][0] + v[1] * t[0][1] + v[2] * t[0][2], v[0] * t[1][0] + v[1] * t[1][1] + v[2] * t[1][2], v[0] * t[2][0] + v[1] * t[2][1] + v[2] * t[2][2]];
   }
 
-  var two_rotations = TwoRotations;
+  var twoRotations = { rotate: rotate, generateMatrix: generateMatrix };
+
+  var two_rotations = twoRotations;
 
   return two_rotations;
 });
