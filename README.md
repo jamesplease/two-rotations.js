@@ -6,6 +6,13 @@
 
 Rotate vectors about two axes.
 
+### Installation
+
+```js
+npm install two-rotations
+bower install two-rotations
+```
+
 ### Motivation
 
 In three dimensions, there are three possible rotations: one about each axis. In many visualizations,
