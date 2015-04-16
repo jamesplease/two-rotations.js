@@ -63,7 +63,7 @@
   },
   "babelBoilerplateOptions": {
     "entryFileName": "two-rotations",
-    "exportVarName": "TwoRotations",
+    "exportVarName": "twoRotations",
     "mochaGlobals": [
       "stub",
       "spy",
