@@ -1,6 +1,6 @@
 {
   "name": "two-rotations",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Rotate vectors about two axes.",
   "main": "dist/two-rotations.js",
   "scripts": {
