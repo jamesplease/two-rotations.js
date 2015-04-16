@@ -46,15 +46,23 @@ var vector = [
 // Define a vector
 var vector = [1, 0, 0];
 
-// Rotate the vector about some `pitch` and `yaw`
-var newVector = twoRotations(vector, Math.PI, 30);
+// Generate the rotation matrix from a `yaw` and `pitch`.
+var rotation = twoRotations.generateMatrix(Math.PI, 30);
+
+// Rotate a point with that matrix
+var newVector = twoRotations.rotate(vector, rotation);
 ```
 
 #### API
 
-##### `twoRotations( vector [, yaw] [, pitch] )`
+##### `generateMatrix( yaw, pitch )`
 
-Rotate `vector` about a `yaw` angle, then a `pitch` angle. Angles are measured in radians.
+Create a rotation matrix from a `yaw` and `pitch`. Angles are measured in Radians.
+
+##### `rotate( vector, rotationMatrix )`
+
+Accepts a vector as a Javascript matrix of length 3. The rotation matrix should be a
+matrix output from the `generateMatrix` method – though any 3-by-3 matrix will work.
 
 #### Axes
 

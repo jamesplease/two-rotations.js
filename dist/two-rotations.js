@@ -1,5 +1,5 @@
 (function (global, factory) {
-  typeof exports === "object" && typeof module !== "undefined" ? module.exports = factory() : typeof define === "function" && define.amd ? define(factory) : global.TwoRotations = factory();
+  typeof exports === "object" && typeof module !== "undefined" ? module.exports = factory() : typeof define === "function" && define.amd ? define(factory) : global.twoRotations = factory();
 })(this, function () {
   "use strict";
 
